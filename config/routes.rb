@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   resources :articles
 
   root 'welcome#index'
+
+  match ':controller(/:action(/:id(.:format)))', :via => :all
 end

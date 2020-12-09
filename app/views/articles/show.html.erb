@@ -5,6 +5,8 @@
  
 <p>
   <strong>Text:</strong>
-  <%= @article.text %>
+<!--  出现换行　simple_format　-->
+  <%= simple_format @article.text %>
+  <%#=  @article.text %>
 </p>
 <%= link_to 'Back', articles_path %>

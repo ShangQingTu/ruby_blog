@@ -1,6 +1,6 @@
-<h1>新增博客</h1>
+<h1>更改博客</h1>
 
-<%= form_for :article, url: articles_path  do |f| %>
+<%= form_for @article, url: {controller: 'articles', action: 'update', id: @article }  do |f| %>
   <% if @article.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -18,7 +18,7 @@
     <%= f.label :title ,"标题"%><br>
     <%= f.text_field :title %>
   </p>
- 
+
   <p>
     <%= f.label :text ,"文本"%><br>
     <%= f.text_area :text %>

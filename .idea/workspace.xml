@@ -16,12 +16,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cbe6cb0-a66a-4d3d-9a86-040c46458f8d" name="Default Changelist" comment="add back">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="2cbe6cb0-a66a-4d3d-9a86-040c46458f8d" name="Default Changelist" comment="add status to articles">
+      <change afterPath="$PROJECT_DIR$/app/views/articles/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/articles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/articles_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/article.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/article.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articles/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/articles/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articles/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +53,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/ruby/lab0/18374162/blog4" />
+    <property name="nodejs_package_manager_path" value="yarn" />
   </component>
-  <component name="RunManager" selected="Rails.Development: blog">
+  <component name="RunManager" selected="JavaScript Debug.new">
+    <configuration name="new" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://0.0.0.0:3000/articles/new">
+      <method v="2" />
+    </configuration>
     <configuration name="Development: blog" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="blog" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -149,6 +157,11 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.new" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
@@ -160,7 +173,13 @@
       <option name="presentableId" value="Default" />
       <updated>1602656739351</updated>
       <workItem from="1602656740461" duration="32000" />
-      <workItem from="1602681621726" duration="3788000" />
+      <workItem from="1602681621726" duration="5435000" />
+      <workItem from="1602719471807" duration="1442000" />
+      <workItem from="1602987587858" duration="8000" />
+      <workItem from="1603443597823" duration="2272000" />
+      <workItem from="1605073460792" duration="39000" />
+      <workItem from="1607502239349" duration="4760000" />
+      <workItem from="1607510992861" duration="3185000" />
     </task>
     <task id="LOCAL-00001" summary="add show">
       <created>1602682381297</created>
@@ -190,7 +209,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602684256081</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update tittle validate">
+      <created>1602685565528</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602685565528</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add status to articles">
+      <created>1607508625973</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607508625973</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,21 +251,104 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add show" />
     <MESSAGE value="add index.html.erb" />
     <MESSAGE value="add back" />
-    <option name="LAST_COMMIT_MESSAGE" value="add back" />
+    <MESSAGE value="update tittle validate" />
+    <MESSAGE value="add status to articles" />
+    <option name="LAST_COMMIT_MESSAGE" value="add status to articles" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="568" height="881" key="HiddenNamespacesPopup" timestamp="1602684674323">
+    <state x="534" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607508071537">
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
-    <state width="568" height="881" key="HiddenNamespacesPopup/0.0.1920.1016@0.0.1920.1016" timestamp="1602684674323" />
-    <state x="359" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602684481236">
+    <state x="534" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1016@0.0.1920.1016" timestamp="1607508071537" />
+    <state x="563" y="136" key="FileChooserDialogImpl" timestamp="1605073497233">
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
-    <state x="359" y="97" key="Vcs.Push.Dialog.v2/0.0.1920.1016@0.0.1920.1016" timestamp="1602684481236" />
+    <state x="563" y="136" key="FileChooserDialogImpl/0.0.1920.1016@0.0.1920.1016" timestamp="1605073497233" />
+    <state width="1844" height="264" key="GridCell.Tab.0.bottom" timestamp="1607510950358">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950358" />
+    <state width="1844" height="264" key="GridCell.Tab.0.center" timestamp="1607510950358">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.0.center/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950358" />
+    <state width="1844" height="264" key="GridCell.Tab.0.left" timestamp="1607510950357">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.0.left/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950357" />
+    <state width="1844" height="264" key="GridCell.Tab.0.right" timestamp="1607510950358">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.0.right/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950358" />
+    <state width="1844" height="264" key="GridCell.Tab.1.bottom" timestamp="1607510950359">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.1.bottom/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950359" />
+    <state width="1844" height="264" key="GridCell.Tab.1.center" timestamp="1607510950359">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.1.center/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950359" />
+    <state width="1844" height="264" key="GridCell.Tab.1.left" timestamp="1607510950358">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.1.left/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950358" />
+    <state width="1844" height="264" key="GridCell.Tab.1.right" timestamp="1607510950359">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.1.right/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950359" />
+    <state width="1844" height="264" key="GridCell.Tab.2.bottom" timestamp="1607510950360">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.2.bottom/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950360" />
+    <state width="1844" height="264" key="GridCell.Tab.2.center" timestamp="1607510950360">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.2.center/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950360" />
+    <state width="1844" height="264" key="GridCell.Tab.2.left" timestamp="1607510950359">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.2.left/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950359" />
+    <state width="1844" height="264" key="GridCell.Tab.2.right" timestamp="1607510950360">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.2.right/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950360" />
+    <state width="1844" height="264" key="GridCell.Tab.3.bottom" timestamp="1607510950361">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.3.bottom/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950361" />
+    <state width="1844" height="264" key="GridCell.Tab.3.center" timestamp="1607510950361">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.3.center/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950361" />
+    <state width="1844" height="264" key="GridCell.Tab.3.left" timestamp="1607510950360">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.3.left/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950360" />
+    <state width="1844" height="264" key="GridCell.Tab.3.right" timestamp="1607510950361">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="1844" height="264" key="GridCell.Tab.3.right/0.0.1920.1016@0.0.1920.1016" timestamp="1607510950361" />
+    <state width="568" height="881" key="HiddenNamespacesPopup" timestamp="1607503512099">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="568" height="881" key="HiddenNamespacesPopup/0.0.1920.1016@0.0.1920.1016" timestamp="1607503512099" />
+    <state x="359" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607508638281">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state x="359" y="97" key="Vcs.Push.Dialog.v2/0.0.1920.1016@0.0.1920.1016" timestamp="1607508638281" />
+    <state x="621" y="6" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603443854554">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state x="621" y="6" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1016@0.0.1920.1016" timestamp="1603443854554" />
+    <state x="455" y="215" key="run.anything.popup" timestamp="1607513543335">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state x="455" y="215" key="run.anything.popup/0.0.1920.1016@0.0.1920.1016" timestamp="1607513543335" />
   </component>
 </project>
