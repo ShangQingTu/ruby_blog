@@ -1,6 +1,6 @@
 <h1>更改博客</h1>
 
-<%= form_for @article, url: {controller: 'articles', action: 'update', id: @article }  do |f| %>
+<%= form_for @article, url: article_path(@article), mathod: :patch do |f| %>
     <%= render partial: "form" , locals: { f: f }   %>
 <% end %>
 

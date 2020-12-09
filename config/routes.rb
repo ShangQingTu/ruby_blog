@@ -5,5 +5,6 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  match ':controller(/:action(/:id(.:format)))', :via => :all
+  # 不区分get post这不好
+  # match ':controller(/:action(/:id(.:format)))', :via => :all
 end

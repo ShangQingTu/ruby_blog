@@ -1,4 +1,7 @@
 <h1>Listing articles</h1>
+<!--debug打印出来-->
+<%#=debug(@articles[0]) %>
+
 <%= link_to 'New article', new_article_path %>
 <table>
   <tr>
@@ -11,9 +14,10 @@
       <td><%= article.title %></td>
       <td><%= article.text %></td>
       <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', controller: 'articles', action:  'edit', id: article  %></td>
+<!--      <td><%#= link_to 'Edit', controller: 'articles', action:  'edit', id: article  %></td>-->
+      <td><%= link_to 'Edit',  edit_article_path(article)  %></td>
 <!--      delete 在 rails4　之后　都只能按　method写, 否则还是走GET路由 -->
-      <td><%= link_to 'Delete', article ,method: :delete   %></td>
+      <td><%= link_to 'Delete', article_path(article) ,method: :delete   %></td>
     </tr>
   <% end %>
 </table>
