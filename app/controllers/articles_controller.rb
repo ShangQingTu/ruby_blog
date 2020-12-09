@@ -12,19 +12,20 @@ class ArticlesController < ApplicationController
   def update
     @article = Article.find(params[:id])
     # 更新
-    @article.update(article_params)
-    if @article.save
+    if  @article.update(article_params)
       # redirect_to @article
       # 成功了去的路由
       redirect_to action: :show, id: @article
     else
-      render 'new'
+      # 失败了　不能用redirect 只能用render, 因为redirect 　在错误之前编辑的东西就没了
+      render action: :edit
     end
   end
 
-  # GET /articles/show/:id
+  # GET /articles/:id/show
   def show
     @article = Article.find(params[:id])
+    @article_status = @article.status
   end
 
   def new
@@ -35,6 +36,7 @@ class ArticlesController < ApplicationController
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
+    flash[:alert] = "删除成功"
     redirect_to action: :index
   end
 
@@ -46,8 +48,10 @@ class ArticlesController < ApplicationController
     if @article.save
       # redirect_to @article
       # 成功了去的路由
+      flash[:notice] = "新增成功"
       redirect_to action: :index
     else
+      flash[:alert] = "新增失败"
       render 'new'
     end
   end

@@ -16,16 +16,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cbe6cb0-a66a-4d3d-9a86-040c46458f8d" name="Default Changelist" comment="add status to articles">
-      <change afterPath="$PROJECT_DIR$/app/views/articles/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+    <list default="true" id="2cbe6cb0-a66a-4d3d-9a86-040c46458f8d" name="Default Changelist" comment="finish CRUD">
+      <change afterPath="$PROJECT_DIR$/app/views/articles/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/articles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/articles_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articles/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/articles/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="ERB File" />
       </list>
     </option>
   </component>
@@ -179,7 +177,7 @@
       <workItem from="1603443597823" duration="2272000" />
       <workItem from="1605073460792" duration="39000" />
       <workItem from="1607502239349" duration="4760000" />
-      <workItem from="1607510992861" duration="3185000" />
+      <workItem from="1607510992861" duration="5234000" />
     </task>
     <task id="LOCAL-00001" summary="add show">
       <created>1602682381297</created>
@@ -223,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607508625973</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="finish CRUD">
+      <created>1607514299135</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607514299135</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +264,8 @@
     <MESSAGE value="add back" />
     <MESSAGE value="update tittle validate" />
     <MESSAGE value="add status to articles" />
-    <option name="LAST_COMMIT_MESSAGE" value="add status to articles" />
+    <MESSAGE value="finish CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish CRUD" />
   </component>
   <component name="WindowStateProjectService">
     <state x="534" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607508071537">
@@ -338,10 +344,10 @@
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
     <state width="568" height="881" key="HiddenNamespacesPopup/0.0.1920.1016@0.0.1920.1016" timestamp="1607503512099" />
-    <state x="359" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607508638281">
+    <state x="359" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607514308747">
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
-    <state x="359" y="97" key="Vcs.Push.Dialog.v2/0.0.1920.1016@0.0.1920.1016" timestamp="1607508638281" />
+    <state x="359" y="97" key="Vcs.Push.Dialog.v2/0.0.1920.1016@0.0.1920.1016" timestamp="1607514308747" />
     <state x="621" y="6" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603443854554">
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
