@@ -1,0 +1,4 @@
+<%=form_for @viewer, url: article_viewers_path(@article) do |f| %>
+  <%= render partial: "form" , locals: { f: f }   %>
+<% end %>
+<%= link_to '返回', article_viewers_path(@article) %>

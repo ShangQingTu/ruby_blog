@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   get 'welcome/index'
 
-  resources :articles
+  resources :articles do
+    resources :viewers, controller: "article_viewers"
+  end
 
   root 'welcome#index'
 

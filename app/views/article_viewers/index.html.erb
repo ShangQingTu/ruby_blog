@@ -1,0 +1,25 @@
+<h2> <%= @article.title %>: viewer list </h2>
+
+<table>
+  <tr>
+    <th>访客</th>
+    <th>最初访问</th>
+    <th>最近访问</th>
+  </tr>
+  <% @viewers.each do |viewer| %>
+    <tr>
+    <td><%= viewer.name %></td>
+    <td><%= viewer.created_at %></td>
+    <td><%= viewer.updated_at %></td>
+      <td>  <%= link_to "展示", article_viewer_path(@article, viewer) %></td>
+      <td> <%= link_to "再次访问", edit_article_viewer_path(@article, viewer) %></td>
+      <td> <%= link_to "删除访客", article_viewer_path(@article, viewer), method: :delete %></td>
+
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to '新增访客', new_article_viewer_path(@article) %> <br>
+<%= link_to '返回', articles_path %>
+
+

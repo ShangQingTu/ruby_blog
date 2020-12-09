@@ -16,12 +16,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cbe6cb0-a66a-4d3d-9a86-040c46458f8d" name="Default Changelist" comment="use _form">
+    <list default="true" id="2cbe6cb0-a66a-4d3d-9a86-040c46458f8d" name="Default Changelist" comment="restful">
+      <change afterPath="$PROJECT_DIR$/app/views/article_viewers/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/article_viewers/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/article_viewers/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/article_viewers/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/article_viewers/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/articles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/articles_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/article.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/article.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/articles/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +181,8 @@
       <workItem from="1603443597823" duration="2272000" />
       <workItem from="1605073460792" duration="39000" />
       <workItem from="1607502239349" duration="4760000" />
-      <workItem from="1607510992861" duration="9153000" />
+      <workItem from="1607510992861" duration="15573000" />
+      <workItem from="1607527192782" duration="2816000" />
     </task>
     <task id="LOCAL-00001" summary="add show">
       <created>1602682381297</created>
@@ -241,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607516547117</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="restful">
+      <created>1607520763511</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607520763511</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +293,8 @@
     <MESSAGE value="finish CRUD" />
     <MESSAGE value="add flash" />
     <MESSAGE value="use _form" />
-    <option name="LAST_COMMIT_MESSAGE" value="use _form" />
+    <MESSAGE value="restful" />
+    <option name="LAST_COMMIT_MESSAGE" value="restful" />
   </component>
   <component name="WindowStateProjectService">
     <state x="534" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607508071537">
@@ -359,10 +373,10 @@
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
     <state width="568" height="881" key="HiddenNamespacesPopup/0.0.1920.1016@0.0.1920.1016" timestamp="1607503512099" />
-    <state x="359" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607516552458">
+    <state x="359" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607520770006">
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
-    <state x="359" y="97" key="Vcs.Push.Dialog.v2/0.0.1920.1016@0.0.1920.1016" timestamp="1607516552458" />
+    <state x="359" y="97" key="Vcs.Push.Dialog.v2/0.0.1920.1016@0.0.1920.1016" timestamp="1607520770006" />
     <state x="621" y="6" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603443854554">
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
